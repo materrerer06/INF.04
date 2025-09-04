@@ -34,11 +34,11 @@ namespace ConsoleApp2
         }
         public void np()
         {
-            foreach(int x in this.niepa())
+            foreach(int x in this.niepa)
             {
                 Console.WriteLine(x);
             }
-            Console.WriteLine("Razem nieparysztych: " + niepa().Count());
+            Console.WriteLine("Razem nieparysztych: " + niepa.Count());
         }
 
         public int[] niepa { get
@@ -48,9 +48,22 @@ namespace ConsoleApp2
         }
         public int srednia { get
         {
-            return (int)tablica.Average();
-
+                return (int)tablica.Average();
         }
+        }
+        public int min
+        {
+            get
+            {
+                return (int)tablica.Min();
+            }
+        }
+        public int max
+        {
+            get
+            {
+                return (int)tablica.Max();
+            }
         }
     }
 }
