@@ -40,15 +40,17 @@ namespace ConsoleApp2
             }
             Console.WriteLine("Razem nieparysztych: " + niepa().Count());
         }
-        public int[] niepa()
-        {
-            return tablica.Where(e => e % 2 != 0).ToArray();
 
+        public int[] niepa { get
+        {
+                return tablica.Where(e => e % 2 != 0).ToArray();
         }
-        public int srednia()
+        }
+        public int srednia { get
         {
             return (int)tablica.Average();
 
+        }
         }
     }
 }
